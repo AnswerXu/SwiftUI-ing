@@ -11,3 +11,13 @@
   
 - [Hide-TabBar-In-SwiftUI](https://github.com/TreatTrick/Hide-TabBar-In-SwiftUI)
   - This tutorial provides a solution to hide TabBars when using TabView in SwiftUI
+
+-  List rowView 添加 NavigationLink 后自带箭头解决方案：
+    ```
+    ZStack {
+      SystemSettingRow(entity: entity)
+      NavigationLink.init(destination: SystemSetting()) {
+      }.opacity(0)
+    }
+  
+    ```
